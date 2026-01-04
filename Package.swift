@@ -26,6 +26,9 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("include"),
                 .headerSearchPath("src")
+            ],
+            linkerSettings: [
+                .linkedLibrary("iconv")
             ]
         ),
         .target(
@@ -36,7 +39,8 @@ let package = Package(
         .testTarget(
             name: "LibXLSTests",
             dependencies: ["LibXLS"],
-            path: "Tests/LibXLSTests"
+            path: "Tests/LibXLSTests",
+            resources: [.copy("Resources")]
         )
     ]
 )
