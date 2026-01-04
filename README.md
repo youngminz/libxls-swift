@@ -173,7 +173,9 @@ do {
 
 ## License
 
-This package includes libxls which is licensed under the BSD-2-Clause license.
+This project is licensed under the BSD-2-Clause License - see the [LICENSE](LICENSE) file for details.
+
+This package wraps [libxls](https://github.com/libxls/libxls) which is also licensed under BSD-2-Clause.
 
 ## Credits
 
