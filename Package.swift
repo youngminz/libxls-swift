@@ -20,7 +20,13 @@ let package = Package(
     targets: [
         .target(
             name: "Clibxls",
-            path: "Sources/Clibxls"
+            path: "Sources/Clibxls",
+            sources: ["src"],
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("include"),
+                .headerSearchPath("src")
+            ]
         ),
         .target(
             name: "LibXLS",
