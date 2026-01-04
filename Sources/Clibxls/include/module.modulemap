@@ -1,0 +1,4 @@
+module Clibxls {
+    header "xls.h"
+    export *
+}
