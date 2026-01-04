@@ -23,7 +23,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/libxls-swift.git", from: "1.0.0")
+    .package(url: "https://github.com/youngminz/libxls-swift.git", from: "1.0.0")
 ]
 ```
 
