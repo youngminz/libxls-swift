@@ -1,3 +1,10 @@
+import Clibxls
+
 public enum LibXLS {
-    public static let version = "1.6.3"
+    public static var version: String {
+        guard let version = xls_getVersion() else {
+            return "unknown"
+        }
+        return String(cString: version)
+    }
 }
